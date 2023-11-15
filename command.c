@@ -101,7 +101,7 @@ void executeCmmd(char *command)
 
 		char command_cpy[MAX_SIZE_INPUT];
 
-		strncpy(command_cpy, commands, sizeof(command_cpy));
+		strncpy(command_cpy, command, sizeof(command_cpy) - 1);
 		command_cpy[sizeof(command_cpy) - 1] = '\0';
 
 		token = strtok(command_cpy, "\n");
@@ -115,7 +115,7 @@ void executeCmmd(char *command)
 			token = strtok(NULL, "\n");
 		}
 		commands[j] = NULL;
-		for (k = 0; j < k; k++)
+		for (k = 0; k < j; k++)
 		{
 			execute_single_cmmd(commands[k]);
 		}
