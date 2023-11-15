@@ -25,10 +25,12 @@ int main(void)
 	r_bytes = getline(&input, &buffer, stdin);
 
 	if (r_bytes == -1)
-	       {
+	{
+
 		perror("getline");
 		exit(EXIT_FAILURE);
-		}
+	}
+
 		if (r_bytes > 1)
 		{
 			input[r_bytes - 1] = '\0';

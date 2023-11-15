@@ -11,8 +11,8 @@
  * @args: array of arguments for the command
  * @environ: environment variables to use
  */
-void execute_CmmdwithPath(char *command, char *const args[],
-	       	char *const environ[])
+void execute_CmmdwithPath(char *command, char
+		*const args[], char *const environ[])
 {
 	char *path = getenv("PATH");
 	char *path_cpy = strdup(path);
