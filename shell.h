@@ -3,8 +3,6 @@
 
 extern char **environ;
 
-int setenv_cmmd(const char *variable, const char *value);
-int unsetenv_cmmd(const char *variable);
 void execute_Child(char *args[]);
 void executeCmmd(char *command);
 void tokenize_Cmmd(char *command, char *args[]);
