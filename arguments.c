@@ -54,7 +54,6 @@ void execute_cmmd(char *command)
 	char *token;
 	int j = 0;
 	int k;
-
 	char cmd_copy[MAX_SIZE_INPUT];
 
 	strncpy(cmd_copy, command, sizeof(cmd_copy));
