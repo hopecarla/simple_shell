@@ -26,7 +26,6 @@ int main(void)
 
 	if (r_bytes == -1)
 	{
-
 		perror("getline");
 		exit(EXIT_FAILURE);
 	}
