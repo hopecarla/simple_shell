@@ -12,5 +12,5 @@ void execute_cmmd(char *command);
 void execute_single_cmmd(char *command);
 void execute_CmmdwithPath(char *command, char *const args[], char *const environ[]);
 void Env(void);
-void exit_sh(void);
+void exit_shell(void);
 #endif
